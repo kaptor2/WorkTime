@@ -16,6 +16,22 @@
 		<a href="intent://arvr.google.com/scene-viewer/1.0?file=https://github.com/kaptor2/WorkTime/raw/main/android_model.glb#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Android link</a>
 		<br />
 		<img src="qrCode2.png"  width="300" height="300">
+
+		<model-viewer src="https://github.com/kaptor2/WorkTime/raw/main/android_model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+		    <div class="progress-bar hide" slot="progress-bar">
+		        <div class="update-bar"></div>
+		    </div>
+		    <button slot="ar-button" id="ar-button">
+		        <font style="vertical-align: inherit;">
+		            <font style="vertical-align: inherit;">
+		                Посмотреть в своем пространстве
+		            </font>
+		        </font>
+		    </button>
+		    <div id="ar-prompt">
+		        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+		    </div>
+		</model-viewer>
 	</div>
 	
 </body>
